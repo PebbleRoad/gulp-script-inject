@@ -30,7 +30,7 @@ var scriptInject = function (param) {
 
     for(var i =0; i< jsonfiles.length; i++){
 
-        if(path.extname(jsonfiles) == ext){
+        if(path.extname(jsonfiles[i]) == ext){
           var name = jsonfiles[i].replace(/^\d./, '').split('.')[0]
 
           snippet+="{name: \""+name+"\", path: \"json/" + jsonfiles[i]+ "\"},"  
