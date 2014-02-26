@@ -1,6 +1,6 @@
 {
   "name": "gulp-script-inject",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A gulp plugin to inject JS variables after reading from a directory",
   "keywords": [
     "gulpplugin",
