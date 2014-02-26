@@ -7,7 +7,7 @@ var scriptInject = function (param) {
   "use strict";
 
   var opts = param || {};
-  var pathname = opts.path;
+  var pathname = opts.path || './src/json';
   var varname = opts.varname || 'yamlPath';
   var snippet = "<script></script>";
 
