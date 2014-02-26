@@ -28,7 +28,7 @@ var scriptInject = function (param) {
         snippet = '<script id="'+varname+'">var '+ varname +' = ['
 
     for(var i =0; i< jsonfiles.length; i++){
-        var name = jsonfiles[i].split('.')[0]
+        var name = jsonfiles[i].replace(/^\d./, '').split('.')[0]
 
         snippet+="{name: \""+name+"\", path: \"json/" + jsonfiles[i]+ "\"},"
         
