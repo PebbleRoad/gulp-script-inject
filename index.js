@@ -9,6 +9,7 @@ var scriptInject = function (param) {
   var opts = param || {};
   var pathname = opts.path || './src/json';
   var varname = opts.varname || 'yamlPath';
+  var ext = opts.ext || '.json';
   var snippet = "<script></script>";
 
   
@@ -28,9 +29,13 @@ var scriptInject = function (param) {
         snippet = '<script id="'+varname+'">var '+ varname +' = ['
 
     for(var i =0; i< jsonfiles.length; i++){
-        var name = jsonfiles[i].replace(/^\d./, '').split('.')[0]
 
-        snippet+="{name: \""+name+"\", path: \"json/" + jsonfiles[i]+ "\"},"
+        if(path.extname(jsonfiles) == ext){
+          var name = jsonfiles[i].replace(/^\d./, '').split('.')[0]
+
+          snippet+="{name: \""+name+"\", path: \"json/" + jsonfiles[i]+ "\"},"  
+        }
+        
         
     }
 
