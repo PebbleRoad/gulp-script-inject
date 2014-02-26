@@ -11,7 +11,7 @@ var scriptInject = function (param) {
   var varname = opts.varname || 'yamlPath';
   var snippet = "<script></script>";
 
-
+  
 
   var stream = through.obj(function (file, enc, callback) {
     var checkAndInsert = function(buffer) {
