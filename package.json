@@ -1,0 +1,45 @@
+{
+  "name": "gulp-script-inject",
+  "version": "0.0.1",
+  "description": "A gulp plugin to inject JS variables after reading from a directory",
+  "keywords": [
+    "gulpplugin",
+    "livereload"
+  ],
+  "homepage": "https://github.com/PebbleRoad/gulp-script-inject",
+  "bugs": {
+    "url": "https://github.com/PebbleRoad/gulp-script-inject/issues"
+  },
+  "author": {
+    "name": "Vinay M",
+    "email": "vinay@pebbleroad.com",
+    "url": "https://github.com/PebbleRoad"
+  },
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/PebbleRoad/gulp-script-inject.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "event-stream": "*",
+    "through2": "~0.4.0",
+    "path": "~0.4.9"
+  },
+  "devDependencies": {
+    "gulp-util": "~2.2.0",
+    "gulp": "~3.3.2",
+    "assert": "~1.1.0",
+    "rimraf": "~2.2.5",
+    "mocha": "~1.17.0"
+  },
+  "engines": {
+    "node": ">=0.8.0",
+    "npm": ">=1.2.10"
+  },
+  "licenses": "MIT",
+  "readme": "# gulp-script-inject \nPlugin to inject variables from filenames from a directory. Used for tapestry",
+  "readmeFilename": "README.md"
+}
